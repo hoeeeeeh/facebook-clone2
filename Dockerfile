@@ -27,6 +27,6 @@ FROM adoptopenjdk:11-jdk-hotspot-bionic
 
 COPY --from=builder /app/build/libs/*.jar app.jar
 
-EXPOSE 80
+EXPOSE 8080
 # Define the entry point for the application
 ENTRYPOINT ["java", "-jar", "/app.jar"]
