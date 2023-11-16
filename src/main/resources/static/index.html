@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+
+        header {
+            background-color: #4267B2;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #left-column {
+            width: 65%;
+        }
+
+        #right-column {
+            width: 30%;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+
+        .post {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        .post img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .post p {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .post a {
+            color: #385898;
+            text-decoration: none;
+        }
+
+        .post a:hover {
+            text-decoration: underline;
+        }
+
+        .profile-pic {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .friend-request {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .friend-request img {
+            width: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .friend-request button {
+            background-color: #4267B2;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #f0f2f5;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <title>Facebook Clone</title>
+</head>
+<body>
+<header>
+    Facebook
+</header>
+
+<div class="container">
+    <div id="left-column">
+        <div class="post">
+            <img src="https://placekitten.com/900/300" alt="Post Image">
+            <p><strong>John Doe</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#">#LoremIpsum</a></p>
+        </div>
+
+        <!-- Add more posts here -->
+
+    </div>
+
+    <div id="right-column">
+        <div class="profile-pic">
+            <img src="https://placekitten.com/150/150" alt="Profile Picture">
+        </div>
+
+        <div class="friend-request">
+            <img src="https://placekitten.com/40/40" alt="Friend Request">
+            <div>
+                <p><strong>Jane Doe</strong> sent you a friend request.</p>
+                <button>Confirm</button>
+            </div>
+        </div>
+
+        <!-- Add more friend requests or other sidebar content here -->
+
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 Facebook Clone
+</footer>
+</body>
+</html>

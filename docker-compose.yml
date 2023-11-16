@@ -1,0 +1,7 @@
+version: '3'
+services:
+  facebook-clone:
+    image: jakeheon/facebook-clone
+    container_name: facebook-clone
+    ports:
+      - "8080:8080"
