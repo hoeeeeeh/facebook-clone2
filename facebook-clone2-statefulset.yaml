@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  annotations:
+    kompose.cmd: kompose -f docker-compose.yml --namespace=hoeeeeeh --controller statefulset convert
+    kompose.version: 1.31.0 (a04ecdb9e)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: facebook-clone2
+  name: facebook-clone2
+  namespace: hoeeeeeh
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: facebook-clone2
+  serviceName: facebook-clone2
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.network/facebook-clone2-default: "true"
+        io.kompose.service: facebook-clone2
+    spec:
+      containers:
+        - image: kuploy/facebook-clone2
+          name: facebook-clone2
+          ports:
+            - containerPort: 8080
+              hostPort: 8080
+              protocol: TCP
+          resources: {}
+      restartPolicy: Always
+  updateStrategy: {}
+status:
+  availableReplicas: 0
+  replicas: 0
